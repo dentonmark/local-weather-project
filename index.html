@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Your Local Weather</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- API to use: https://darksky.net/dev/docs/forecast -->
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/css/uikit.min.css" />
+
+  <!-- jQuery is required -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.23/js/uikit-icons.min.js"></script>
+
+  <!-- Local CSS stylesheet -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+
+</head>
+
+<body>
+  <div class="uk-section uk-section-large uk-position-cover uk-section-secondary uk-light">
+    <div class="uk-container uk-position-top uk-margin-medium-top uk-width-1-2@s">
+      <div class="uk-text-center"><h1>Current Weather</h1></div>
+      <div id="location" class="uk-text-large uk-text-center"></div>
+      <div class="uk-text-center uk-margin-medium-top uk-margin-small-bottom"><canvas id="skycon" width="250" height="250"></canvas></div>
+      <div id ="conditions" class="uk-text-center uk-text-large uk-text-bold"></div>
+      <div id="temperature" class="uk-text-large uk-text-center"></div>
+      <div id="temperatureCelsius" class="uk-text-large uk-text-center" style="display:none;"> This will be the C temp</div>
+    <div class="uk-text-small uk-text-center"><a href="javascript:void(0);" id="fc-toggle" class="uk-link-muted">F / C</a></div>
+  </div>
+    <div class="uk-container uk-position-bottom">
+      <div class="uk-text-center">
+        <p>FreeCodeCamp Project by <a href="https://dentonmark.github.io/">Mark Denton</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+  <script src="js/skycons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+div {
+    outline: 0px solid red;
+}
+h1 {
+  margin:0;
+  padding:0;
+}
+
+a:hover   {
+  text-decoration: none;
+  }
+
+/*h2 {
+  margin:0;
+  padding:0;
+}*/
