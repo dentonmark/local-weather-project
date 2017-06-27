@@ -77,12 +77,14 @@ if ("geolocation" in navigator) {
 }
 
 $(function(){
-  $('#fc-toggle').click(function(){
+   setTimeout(function(){
+      $("#fc-toggle").show();
+   }, 10000);
+});
+
+$(function(){
+  $('#fc-toggle').click(function() {
      $('#temperature').toggle();
      $('#temperatureCelsius').toggle();
   });
 });
-
-//Good JSON Example: https://www.sitepoint.com/ajaxjquery-getjson-simple-example/
-
-//Reverse Geocoding Example: https://www.raymondcamden.com/2013/03/05/Simple-Reverse-Geocoding-Example
