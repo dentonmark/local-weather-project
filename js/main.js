@@ -15,7 +15,7 @@ if ("geolocation" in navigator) {
     userLong = position.coords.longitude;
     userLat = position.coords.latitude;
     $(document).ready(function() {
-      $.getJSON("https://crossorigin.me/https://api.darksky.net/forecast/520a954a1dde77e3f6f056c8b8a2a9c3/" + userLat + "," + userLong + "?exclude=minutely,hourly,daily,alerts,flags", function(weatherData) {
+      $.getJSON("https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/520a954a1dde77e3f6f056c8b8a2a9c3/" + userLat + "," + userLong + "?exclude=minutely,hourly,daily,alerts,flags", function(weatherData) {
 
           var currentTemp = weatherData.currently.temperature;
           var currentConditions = weatherData.currently.summary;
